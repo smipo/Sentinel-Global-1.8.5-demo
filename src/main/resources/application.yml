@@ -1,0 +1,12 @@
+server:
+  port: 8999
+
+# application.yml文件中添加如下配置：
+spring:
+  application:
+    name: demo   # 服务名称 应用名称
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8088 # 配置sentinel dashboard地址
+        port: 8729
